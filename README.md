@@ -39,7 +39,10 @@ Ensure you have the following installed:
 
 2. Install dependencies:
    ```bash
+   cd CourseManagement-Backend-NodeJS
    npm install
+   ```
+
 
 3. Set up environment variables:
 
@@ -63,6 +66,41 @@ Ensure you have the following installed:
 2. To run the application in development mode with automatic restarts on file changes, use:
    ```bash
    npm run dev
-This requires `nodemon` to be installed globally. You can install it using:
+
+  This requires `nodemon` to be installed globally. You can install it using:
   ```bash
     npm install -g nodemon
+  ```
+
+  Once nodemon is installed, exit the bash shell by typing:
+  ```bash
+     exit
+  ```
+
+3. Ensure that the MySQL server is running and that the database specified in your /utils/index file is accessible or create a new database in MySQL.
+
+
+## API Endpoints
+
+1. **POST /api/auth/register:** Register a new user.
+2. **POST /api/auth/login:** User login to obtain JWT token.
+3. **GET /api/courses:** Retrieve all courses.
+4. **POST /api/courses:** Create a new course.
+5. **GET /api/courses/:id:** Retrieve a specific course by ID.
+6. **PUT /api/courses/:id:** Update a specific course by ID.
+7. **DELETE /api/courses/:id:** Delete a specific course by ID.
+8. **GET /api/users:** Retrieve all users.
+9. **POST /api/users:** Create a new user.
+10. **GET /api/users/:id:** Retrieve a specific user by ID.
+11. **PUT /api/users/:id:** Update a specific user by ID.
+12. **DELETE /api/users/:id:** Delete a specific user by ID.
+
+## Contributing
+  Contributions are welcome! Fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+```vbnet
+Feel free to customize it further based on specific functionalities or additional information you want to highlight about your project.
+```
+
