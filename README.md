@@ -85,18 +85,34 @@ Ensure you have the following installed:
 
 ## API Endpoints
 
-1. **POST /api/auth/register:** Register a new user.
-2. **POST /api/auth/login:** User login to obtain JWT token.
-3. **GET /api/courses:** Retrieve all courses.
-4. **POST /api/courses:** Create a new course.
-5. **GET /api/courses/:id:** Retrieve a specific course by ID.
-6. **PUT /api/courses/:id:** Update a specific course by ID.
-7. **DELETE /api/courses/:id:** Delete a specific course by ID.
-8. **GET /api/users:** Retrieve all users.
-9. **POST /api/users:** Create a new user.
-10. **GET /api/users/:id:** Retrieve a specific user by ID.
-11. **PUT /api/users/:id:** Update a specific user by ID.
-12. **DELETE /api/users/:id:** Delete a specific user by ID.
+1. **Authentication**
+   - POST `/api/auth/register`: Registers a new user.
+   - POST `/api/auth/login`: Authenticates a user and returns a JWT.
+
+2. **Courses**
+   - GET `/api/courses`: Retrieves all courses.
+   - POST `/api/courses`: Creates a new course.
+   - GET `/api/courses/:id`: Retrieves a specific course by ID.
+   - PUT `/api/courses/:id`: Updates a specific course by ID.
+   - DELETE `/api/courses/:id`: Deletes a specific course by ID.
+
+3. **Students**
+   - GET `/api/students`: Retrieves all students.
+   - POST `/api/students`: Adds a new student.
+   - GET `/api/students/:id`: Retrieves a specific student by ID.
+   - PUT `/api/students/:id`: Updates a specific student by ID.
+   - DELETE `/api/students/:id`: Deletes a specific student by ID.
+
+4. **Instructors**
+   - GET `/api/instructors`: Retrieves all instructors.
+   - POST `/api/instructors`: Adds a new instructor.
+   - GET `/api/instructors/:id`: Retrieves a specific instructor by ID.
+   - PUT `/api/instructors/:id`: Updates a specific instructor by ID.
+   - DELETE `/api/instructors/:id`: Deletes a specific instructor by ID.
+
+5. **Enrollments**
+   - POST `/api/enrollments`: Enrolls a student in a course.
+   - DELETE `/api/enrollments`: Unenrolls a student from a course.
 
 ## Contributing
   Contributions are welcome! Fork the repository and submit a pull request.
