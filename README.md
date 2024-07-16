@@ -17,8 +17,10 @@ This repository contains the backend implementation for a Course Management syst
 - Node.js
 - Express.js
 - Sequelize
+- MySQL
 - JWT (JSON Web Tokens) for authentication
 - bcrypt for password hashing
+- node-input-validator
 - dotenv for environment variables
 
 ## Getting Started
@@ -28,7 +30,8 @@ This repository contains the backend implementation for a Course Management syst
 Ensure you have the following installed:
 
 - Node.js (v14 or higher)
-- PostgreSQL
+- Sequelize
+- MySQL
 
 ### Installation
 
@@ -51,7 +54,7 @@ Ensure you have the following installed:
    PORT=3000
    TOKEN_HEADER_KEY='Authorization'
    JWT_SECRET=your_jwt_secret_key
-   
+   ```
 4. Run database migrations:
    ```bash
    npx sequelize-cli db:migrate
